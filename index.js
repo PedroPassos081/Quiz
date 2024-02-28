@@ -79,16 +79,16 @@ function finishGame() {
 
     switch (true) {
         case (performance >= 90):
-            message = "Excelente :)"
+            message = "Uau, você é um hunter de verdade!"
             break
         case (performance >= 70):
-            message = "Muito bom :)"
+            message = "Muito bom!"
             break
         case (performance >= 50):
-            message = "Bom"
+            message = "Bom, mas está na hora de reassistir"
             break
         default:
-            message = "Pode melhorar :("
+            message = "Você nunca assistiu HxH? 😱"
     }
 
     questionsContainer.innerHTML =
@@ -109,64 +109,93 @@ function finishGame() {
 
 const questions = [
     {
-        question: "Dentro de qual elemento HTML colocamos o JavaScript?",
+        question: "Qual é o nome completo do protagonista de Hunter x Hunter?",
         answers: [
-            { text: "<javascript>", correct: false },
-            { text: "<js>", correct: false },
-            { text: "<script>", correct: true },
-            { text: "<scripting>", correct: false }
+            { text: "Killua Zoldyck", correct: false },
+            { text: "Kurapika Kurta", correct: false },
+            { text: "Gon Freecss", correct: true },
+            { text: "Leorio Paradinight", correct: false }
         ]
     },
     {
-        question: "Onde é o lugar correto para inserir JavaScript?",
+        question: "Qual é o nome da técnica especial de Nen usada por Gon Freecss em sua luta contra Hisoka na Torre Celestial?",
         answers: [
-            { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-            { text: "No <body>", correct: false },
-            { text: "No <head>", correct: false },
-            { text: "Em outro lugar", correct: false }
+            { text: "Jajanken", correct: true },
+            { text: "Ryu", correct: false },
+            { text: "Ken", correct: false },
+            { text: "Gyo", correct: false }
         ]
     },
     {
-        question: 'Qual é a sintaxe correta para se referir a um script externo chamado "xxx.js"',
+        question: 'Qual é a habilidade especial de Kurapika que ele desenvolveu para enfrentar os membros da Tropa Fantasma?',
         answers: [
-            { text: '<script src="xxx.js">', correct: true },
-            { text: '<script href="xxx.js">', correct: false },
-            { text: '<script name="xxx.js">', correct: false },
-            { text: "Nenhuma das alternativas", correct: false }
+            { text: "Conjuração", correct: true },
+            { text: "Manipulação", correct: false },
+            { text: "Emissão", correct: false },
+            { text: "Especialização", correct: false }
         ]
     },
     {
-        question: 'O arquivo JavaScript externo deve conter a tag <script>',
+        question: 'Quem é o líder da Tropa Fantasma?',
         answers: [
-            { text: "Verdadeiro", correct: false },
-            { text: "Falso", correct: true }
+            { text: "Hisoka Morow", correct: false },
+            { text: "Chrollo Lucilfer", correct: true },
+            { text: "Illumi Zoldyck", correct: false },
+            { text: "Feitan Portor", correct: false },
         ]
     },
     {
-        question: 'Como escrever "Hello World" numa caixa de alerta?',
+        question: 'Qual é a habilidade de Nen de Hisoka que lhe permite manipular cartas?',
         answers: [
-            { text: 'msg("Hello World");', correct: false },
-            { text: 'alert("Hello World");', correct: true },
-            { text: 'msgBox("Hello World");', correct: false },
-            { text: 'alertBox("Hello World");', correct: false }
+            { text: "Texture Surprise", correct: false },
+            { text: "Bungee Gum", correct: true },
+            { text: "Sun and Moon", correct: false },
+            { text: "Elastic gum", correct: false },
         ]
     },
     {
-        question: 'Como podemos criar uma função no JavaScript?',
+        question: 'Quem é o líder do grupo de extermínio de formigas quimera enviado pela Associação de Caçadores?',
         answers: [
-            { text: 'function:myFunction()', correct: false },
-            { text: 'function myFunction()', correct: true },
-            { text: 'function = myFunction()', correct: false },
-            { text: 'Nenhum desses códigos criaria uma função', correct: false }
+            { text: "Knov", correct: false },
+            { text: "Morel Mackernasey", correct: false },
+            { text: "Netero", correct: true },
+            { text: "Knuckle Bine", correct: false },
         ]
     },
     {
-        question: 'Como podemos chamar uma função chamada "minhaFuncao"?',
+        question: 'Qual é o nome do irmão mais novo de Killua, que também é um assassino profissional?',
         answers: [
-            { text: 'call minhaFuncao()', correct: false },
-            { text: 'call function minhaFuncao()', correct: false },
-            { text: 'Nenhum desses códigos chamaria essa função', correct: false },
-            { text: 'minhaFuncao()', correct: true },
+            { text: 'Milluki Zoldyck', correct: false },
+            { text: 'Illumi Zoldyck', correct: false },
+            { text: 'Kalluto Zoldyck', correct: true },
+            { text: 'Alluka Zoldyck;', correct: false }
+        ]
+    },
+    {
+        question: 'Qual é o nome do melhor amigo de Gon, que é um Caçador experiente e anseia se tornar um médico?',
+        answers: [
+            { text: 'Kurapika Kurta', correct: false },
+            { text: 'Leorio Paradinight', correct: true },
+            { text: 'Hisoka Morow', correct: false },
+            { text: 'Killua Zoldyck', correct: false }
+        ]
+    },
+    {
+        question: 'Qual é o nome da técnica de Nen especializada em fortalecer a defesa do usuário?',
+        answers: [
+            { text: 'Ten', correct: false },
+            { text: 'Ken', correct: true },
+            { text: 'Zetsu', correct: false },
+            { text: 'Ren', correct: false }
+        ]
+    },
+    {
+        question: 'Qual é o nome do mestre de Wing, que ensina Nen a Gon e Killua?',
+        answers: [
+            { text: 'Biscuit Krueger', correct: false },
+            { text: 'Zeno Zoldyck', correct: false },
+            { text: 'Kastro', correct: false },
+            { text: 'Kite', correct: true },
         ]
     },
 ]
