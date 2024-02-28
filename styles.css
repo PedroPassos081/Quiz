@@ -9,9 +9,12 @@
   }
   
   body {
-    background-image: url(/images/download.jpeg);
+    background-image: url(/images/wallpapersden.com_hunter-x-hunter-minimal-art.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+
+    color: #fff;
     
     display: flex;
     flex-direction: column;
@@ -25,16 +28,15 @@
 
   .container-text {
     display: flex;
-    padding-top: 160px;
+    padding-top: 120px;
     
  }
 
   .container {
-    margin-top: 120px;
+    margin-top: 80px;
     background-color: #121214;
     width: 90%;
     max-width: 800px;
-    color: #fff;
     margin-left: 50px;
   
     border: 2px solid #000;
