@@ -9,10 +9,12 @@
   }
   
   body {
+    height: 100vh;
     background-image: url(/images/wallpapersden.com_hunter-x-hunter-minimal-art.jpg);
-    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    width: 100%;
+    background-repeat: no-repeat;
+    max-width: 100%;
 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -122,5 +124,4 @@
   .incorrect {
     background-color: #a10101;
   }
-  
   
